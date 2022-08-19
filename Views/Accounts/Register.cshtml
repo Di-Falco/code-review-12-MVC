@@ -1,0 +1,23 @@
+@using ParksMVC.ViewModels
+@model RegisterViewModel
+
+<h4>Register a New Account</h4>
+<hr />
+@using (Html.BeginForm())
+{
+  <table class="table">
+    <tr>
+      <th>@Html.LabelFor(user => user.Username)</th>
+      <td>@Html.TextBoxFor(user => user.Username)</td>
+    </tr>
+    <tr>
+      <th>@Html.LabelFor(user => user.Password)</th>
+      <td>@Html.PasswordFor(user => user.Password)</td>
+    </tr>
+    <tr>
+      <th>@Html.LabelFor(user => user.ConfirmPassword)</th>
+      <td>@Html.PasswordFor(user => user.ConfirmPassword)</td>
+    </tr>
+  </table>
+  <button class="btn btn-primary" type="submit">Register</button>
+}
