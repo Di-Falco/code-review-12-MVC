@@ -16,7 +16,7 @@ namespace ParksMVC.Models
 
       var builder = new DbContextOptionsBuilder<ParksMVCContext>();
 
-      builder.UseMySql(configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(configuration["ConnectionString:DefaulConnection"]));
+      builder.UseMySql(configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(configuration["ConnectionStrings:DefaultConnection"]));
 
       return new ParksMVCContext(builder.Options);
     }
