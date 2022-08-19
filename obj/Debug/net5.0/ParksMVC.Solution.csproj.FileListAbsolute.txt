@@ -54,3 +54,6 @@
 /Users/difalcoa/Desktop/epicodus/ParksMVC.Solution/obj/Debug/net5.0/ParksMVC.Solution.csproj.CopyComplete
 /Users/difalcoa/Desktop/epicodus/ParksMVC.Solution/obj/Debug/net5.0/ParksMVC.Solution.genruntimeconfig.cache
 /Users/difalcoa/Desktop/epicodus/ParksMVC.Solution/obj/Debug/net5.0/ref/ParksMVC.Solution.dll
+/Users/difalcoa/Desktop/epicodus/ParksMVC.Solution/obj/Debug/net5.0/Razor/Views/Accounts/Index.cshtml.g.cs
+/Users/difalcoa/Desktop/epicodus/ParksMVC.Solution/obj/Debug/net5.0/Razor/Views/Accounts/Login.cshtml.g.cs
+/Users/difalcoa/Desktop/epicodus/ParksMVC.Solution/obj/Debug/net5.0/Razor/Views/Accounts/Register.cshtml.g.cs

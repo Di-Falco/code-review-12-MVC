@@ -4,6 +4,7 @@
 @if (User.Identity.IsAuthenticated)
 {
   <p>Hello @User.Identity.Name</p>
+  <a href='@Url.Action("LogOff")'><button class="btn btn-primary">Log Out</button></a>
 }
 else
 {
