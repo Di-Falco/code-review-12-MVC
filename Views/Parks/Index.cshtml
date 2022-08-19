@@ -1,0 +1,18 @@
+@using ParkMVC.Models
+
+<h3>Featured Oregon Parks</h3>
+
+<ul>
+  @foreach (Park park in Model)
+  {
+    <img url='@park.PhotoUrl' />
+    <table class="table">
+      <thead>
+        <tr>
+          <th><a href='@Url.Action("Details", new { id = @(park.ParkId) })'>@park.Name</a></th>
+          <td align="right">@park.Location</td>
+        </tr>
+      </thead>
+    </table>
+  }
+</ul>

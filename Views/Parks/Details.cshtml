@@ -1,0 +1,17 @@
+@model ParksMVC.Models.Park;
+
+<h4>Park Information</h4>
+<hr />
+<img url='@Model.PhotoUrl' />
+<table>
+  <thead>
+    <tr>
+      <th>@Model.Name &emsp; @Model.Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>@Model.Description</td>
+    </tr>
+  </tbody>
+</table>
