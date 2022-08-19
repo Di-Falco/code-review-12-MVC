@@ -17,6 +17,11 @@ namespace ParksMVC.Controllers
       return View(allParks);
     }
 
+    public ActionResult Details(int id)
+    {
+      return View(Park.GetDetails(id));
+    }
+
     [HttpPost]
     public async Task<ActionResult> Create(string name, string location, string description, string photoUrl)
     {

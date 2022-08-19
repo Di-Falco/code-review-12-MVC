@@ -2,16 +2,14 @@
 
 <h4>Park Information</h4>
 <hr />
-<img url='@Model.PhotoUrl' />
-<table>
-  <thead>
-    <tr>
-      <th>@Model.Name &emsp; @Model.Location</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>@Model.Description</td>
-    </tr>
-  </tbody>
+<div class="row justify-content-start">
+<img src='@Model.PhotoUrl' style="width:640px" class="col-6"/>
+<table class="col-6">
+  <tr>
+    <th>@Model.Name &emsp; @Model.Location</th>
+  </tr>
+  <tr>
+    <td>@Model.Description</td>
+  </tr>
 </table>
+</div>
