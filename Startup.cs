@@ -78,7 +78,7 @@ namespace ParksMVC.Solution
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("nothing to see here.");
+                await context.Response.WriteAsync("nothing to see here");
             });
         }
     }
