@@ -35,7 +35,7 @@ namespace ParksMVC.Controllers
     {
       Park park = new Park { Name = name, Location = location, Description = description, PhotoUrl = photoUrl};
       await Task.Run(() => Park.Post(park));
-      return RedirectToAction(Request.Headers["Referer"].ToString());
+      return RedirectToAction("Index", "Parks");
     }
 
     public ActionResult Edit(int id)

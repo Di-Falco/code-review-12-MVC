@@ -24,8 +24,8 @@ namespace ParksMVC.Models
     public static async Task Post(string newPark)
     {
       RestClient client = new RestClient("http://localhost:5002/api");
-      RestRequest request = new RestRequest("http://localhost:5002/api");
-      request.AddHeader("Content-Type", "application/json");
+      RestRequest request = new RestRequest($"parks", Method.POST);
+      request.AddHeader("Content-Type", "Application/json");
       request.AddJsonBody(newPark);
       var response = await client.ExecuteTaskAsync(request);
     }
