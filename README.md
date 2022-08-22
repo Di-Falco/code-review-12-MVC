@@ -16,7 +16,7 @@
 
 This project simulates a website that features 5 parks around Oregon. Each of these parks are accessed from the ParksDirectory API. The site includes a home page, an index for all parks in the API, and details pages for each park. 
 
-There is an option for users to sign in, but none of the pages currently require authentication. My goal here was to add a user property that kept track of visits to different parks, and hopefully add roles so there could be admin accounts capable fo adding new parks directly from the site. This means some of the controllers are currently unused, and some actions (such as adding and editing parks) can only be done externally through Postman.
+Users can register accounts and sign in, which allows them to add/edit parks through the API. A user account requires a username and a password, which for simplicity's sake can be any single aplhanumeric character.
 
 ## Setup/Installation Requirements
 
@@ -47,7 +47,7 @@ To set up and access the API, see `https://github.com/Di-Falco/code-review-12`
 
 ## Known Bugs
 
-* Currently unable to add/edit/delete parks from the website. These actions have to be done through Postman at the moment.
+* Currently able to add/edit parks with any registered account. Ideally these actions would be limited to admin-authorized users.
 
 ## License
 

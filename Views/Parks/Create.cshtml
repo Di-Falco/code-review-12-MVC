@@ -1,0 +1,27 @@
+@model ParksMVC.Models.Park
+
+<h4>Add a New Park</h4>
+
+@using (Html.BeginForm())
+{
+  <table class="table">
+    <tr>
+      <th>@Html.LabelFor(model => model.Name)</th>
+      <td>@Html.TextBoxFor(model => model.Name)</td>
+    </tr>
+    <tr>
+      <th>@Html.LabelFor(model => model.Location)</th>
+      <td>@Html.TextBoxFor(model => model.Location)</td>
+    </tr>
+    <tr>
+      <th>@Html.LabelFor(model => model.Description)</th>
+      <td><textarea rows="3" cols="60" name="Description"></textarea></td>
+    </tr>
+    <tr>
+      <th>@Html.LabelFor(model => model.PhotoUrl)</th>
+      <td>@Html.TextBoxFor(model => model.PhotoUrl)</td>
+    </tr>
+  </table>
+
+  <button type="submit" class="btn btn-primary">Add Park</button>
+}

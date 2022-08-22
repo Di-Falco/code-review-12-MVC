@@ -9,17 +9,25 @@ using ParksMVC.Models;
 
 namespace ParksMVC.Controllers
 {
+  [Authorize]
   public class ParksController : Controller
   {
+    [AllowAnonymous]
     public IActionResult Index()
     {
       var allParks = Park.GetParks();
       return View(allParks);
     }
 
+    [AllowAnonymous]
     public ActionResult Details(int id)
     {
       return View(Park.GetDetails(id));
+    }
+
+    public ActionResult Create()
+    {
+      return View();
     }
 
     [HttpPost]
@@ -33,6 +41,13 @@ namespace ParksMVC.Controllers
     public ActionResult Edit(int id)
     {
       return View(Park.GetDetails(id));
+    }
+
+    [HttpPost]
+    public async Task<ActionResult> Edit(Park park)
+    {
+      await Task.Run(() => Park.Put(park));
+      return RedirectToAction("Index");
     }
 
     [HttpPost]
